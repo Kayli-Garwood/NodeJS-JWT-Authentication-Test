@@ -63,7 +63,7 @@
               }
           }).then(res => {
               if (res && res.data && res.data.success) {
-                  history.pushState(null, null, '/dashboard');
+                  history.pushState(null, null, 'dashboard');
                   document.querySelector('h1.row').innerHTML = 'Dashboard';
                   document.querySelector('main').innerHTML = res.data.myContent;
               }
@@ -78,12 +78,13 @@
               }
           }).then(res => {
               if (res && res.data && res.data.success) {
-                  history.pushState(null, null, '/settings');
+                  history.pushState(null, null, 'settings');
                   document.querySelector('h1.row').innerHTML = 'Settings';
                   document.querySelector('main').innerHTML = res.data.myContent;
               }
           });
       }
+
   </script>
 
 </body>
